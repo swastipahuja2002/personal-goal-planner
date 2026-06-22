@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #0a0a0f;
+  color: #d4d4e8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+::selection { background: rgba(244,114,182,0.25); }
+
+::-webkit-scrollbar { width: 3px; height: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #2a2a3a; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #f472b640; }
+
+input, textarea { font-family: inherit; font-size: 13px; }
+button { font-family: inherit; cursor: pointer; }
+a { text-decoration: none; color: inherit; }
+
+.card {
+  background: linear-gradient(135deg, #13131f 0%, #111118 100%);
+  border: 1px solid #1e1e2e;
+  border-radius: 12px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.card:hover { border-color: #2a2a3e; }
+
+.editable-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px dashed #2a2a3a;
+  color: #d4d4e8;
+  outline: none;
+  padding: 2px 4px;
+  border-radius: 2px;
+  transition: border-color 0.15s, background 0.15s;
+  width: 100%;
+}
+.editable-input:focus {
+  border-bottom-color: #f472b6;
+  background: rgba(244,114,182,0.04);
+}
+.editable-input::placeholder { color: #2a2a3a; }
+
+.section-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #333350;
+  margin-bottom: 12px;
+}
+
+.tag {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: #2a2a3a;
+  cursor: pointer;
+  padding: 3px 5px;
+  border-radius: 4px;
+  transition: color 0.1s, background 0.1s;
+  line-height: 1;
+  font-size: 12px;
+}
+.icon-btn:hover { color: #888; background: #1e1e2e; }
+.icon-btn.danger:hover { color: #f87171; }
+
+/* Mobile */
+@media (max-width: 639px) {
+  /* Bigger tap targets */
+  button, a { min-height: 36px; }
+  .icon-btn { min-height: unset; padding: 6px 8px; }
+
+  /* Nav hides scrollbar on iOS */
+  nav div::-webkit-scrollbar { display: none; }
+
+  /* Cards full-width */
+  .card { border-radius: 10px; }
+
+  /* Prevent text overflow */
+  h1 { font-size: 22px !important; }
+}
+
+@media (min-width: 640px) {
+  main { padding: 32px 20px 60px !important; }
+}

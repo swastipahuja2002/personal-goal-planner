@@ -1,0 +1,30 @@
+# dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# env — NEVER commit these
+.env
+.env.local
+.env.*.local
+
+# build artifacts
+tsconfig.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# debug
+npm-debug.log*
+
+# scripts (internal tooling, not needed in repo)
+scripts/
+
+# private doc — goes in private repo only, not public
+# detailed.md
+
+# Netlify
+.netlify
