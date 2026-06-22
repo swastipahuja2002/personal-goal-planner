@@ -6,15 +6,17 @@ A dark-mode, single-user personal goal planner built with **Next.js 16**, **Supa
 
 ## Screenshots
 
-> Drop your images in a `screenshots/` folder and they'll render here.
-
 | Today | Month |
 |---|---|
 | ![Today view](screenshots/today.png) | ![Month view](screenshots/month.png) |
 
-| Goals | Review |
+| Goals | Habits |
 |---|---|
-| ![Goals view](screenshots/goals.png) | ![Review view](screenshots/review.png) |
+| ![Goals view](screenshots/goals.png) | ![Habits view](screenshots/habits.png) |
+
+| Review | Import |
+|---|---|
+| ![Review view](screenshots/review.png) | ![Import view](screenshots/import.png) |
 
 ## Features
 
